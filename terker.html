@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bal korok"></div>
+        <div class="container">
+
+            <table>
+                <tr>
+                    <td colspan="3">
+                        <h2>Kör</h2>
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>Kör sugara:</td>
+                    <td><input type="number" value="0" id="korsugar" onchange="szamol();"></td>
+                    <td rowspan="3">
+                        <div class="kor"></div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Kör kerülete:</td>
+                    <td><input type="number" value="0" id="korkerulet" disabled></td>
+                    
+                </tr>
+                <tr>
+                    <td>Kör területe:</td>
+                    <td><input type="number" value="0" id="korterulet" disabled></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <h2>Téglalap</h2>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Oldal hossza:</td>
+                    <td>
+                        <input type="number" id="tlh" value="0" ></td>
+                    <td rowspan="4">
+                        <div class="teglalap"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Oldal szélessége:</td>
+                    <td>
+                        <input type="number" id="tlsz" value="0" onchange="szamol();"></td>
+                </tr>
+                <tr>
+                    <td>Területe:</td>
+                    <td>
+                        <input type="number" id="terulet" value="0" disabled></td>
+                </tr>
+                <tr>
+                    <td>Kerülete:</td>
+                    <td>
+                        <input type="number" id="kerulet" value="0" disabled></td>
+                </tr>
+            </table>
+        </div>
+        <div class="jobb korok"></div>
+
+    </div>
+
+
+    <script src="szamol.js"></script>
+</body>
+
+</html>
